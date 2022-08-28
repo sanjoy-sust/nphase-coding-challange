@@ -42,9 +42,8 @@ public class ShoppingCartService {
                 return totalProductWisePrice
                         .subtract(totalProductWisePrice
                                 .multiply(new BigDecimal(discountPercentage / HUNDRED)));
-            } else {
-                return totalProductWisePrice;
             }
+            return totalProductWisePrice;
         };
     }
 
